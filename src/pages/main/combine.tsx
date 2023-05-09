@@ -14,7 +14,9 @@ interface LayoutProps {
   <div className='bg-main text-white'>
   <Header />
   {children}
-    <Video/>
+  <p className="text-3xl text-purple-600">NEW RELEASE</p><br />
+    <Video/><br />
+    <p className="text-3xl text-purple-600">POPULAR MOVIES</p><br />
     <Movies/>
   <Footer />
   </div>

@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/netvibe_2-removebg-preview.png";
 
 export default function Registration() {
-  const navigate = useNavigate();
+  /*const navigate = useNavigate();
   const [username, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -25,7 +25,7 @@ export default function Registration() {
       console.error(error);
       alert("Registration failed! Please check your email and password and try again.");
     }
-  }
+  } */
 
   return (
     <>
@@ -40,7 +40,7 @@ export default function Registration() {
         ></section>
         <section className="absolute inset-0 bg-gradient-to-b from-zinc-900/50"></section>
         <form
-          onSubmit={handleSubmit}
+          //onSubmit={handleSubmit}
           className="relative mx-auto w-[380px] rounded-lg bg-black/75 p-16"
         >
           <article className="text-gray-300">
@@ -53,8 +53,8 @@ export default function Registration() {
                 id="name"
                 placeholder="Enter name"
                 required
-                value={username}
-                onChange={(event) => setName(event.target.value)}
+               // value={username}
+               // onChange={(event) => setName(event.target.value)}
               />
               <input
                 className="rounded-md bg-zinc-500 p-2 outline-none"
@@ -63,8 +63,8 @@ export default function Registration() {
                 id="email"
                 placeholder="Enter email"
                 required
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
+               // value={email}
+               // onChange={(event) => setEmail(event.target.value)}
               />
               <input
                 className="rounded-md bg-zinc-500 p-2 outline-none"
@@ -73,8 +73,8 @@ export default function Registration() {
                 id="password"
                 placeholder="Enter password"
                 required
-                value={password}
-                onChange={(event) => setPassword(event.target.value)}
+               // value={password}
+               // onChange={(event) => setPassword(event.target.value)}
               />
               <input
                 className="rounded-md bg-zinc-500 p-2 outline-none"
@@ -83,8 +83,8 @@ export default function Registration() {
                 id="passwordconf"
                 placeholder="Confirmation Password"
                 required
-                value={passwordconf}
-                onChange={(event) => setPasswordConfirmation(event.target.value)}
+               // value={passwordconf}
+               // onChange={(event) => setPasswordConfirmation(event.target.value)}
               />
               <p>
            I accept to the{" "}
@@ -93,11 +93,11 @@ export default function Registration() {
               </Link>
             </p>
               <div className="flex justify-center items-center">
-              
+              <Link to="/api/auth/login">
               <button className="my-8 rounded-md bg-subMain p-2 font-semibold text-white outline-none">
                 Sign Up
               </button>
-              
+              </Link>
               </div>
             </section>
             <p>

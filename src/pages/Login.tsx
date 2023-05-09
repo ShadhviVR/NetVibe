@@ -5,7 +5,7 @@ import axios from "axios"; // import axios library
 import logo from "../assets/netvibe_2-removebg-preview.png";
 
 export default function Login() {
-  const navigate = useNavigate();
+  /*const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -25,7 +25,7 @@ export default function Login() {
       console.error(error);
       alert("Login failed! Please check your email and password and try again.");
     }
-  };
+  }; */
 
   return (
     <>
@@ -40,7 +40,7 @@ export default function Login() {
         ></section>
         <section className="absolute inset-0 bg-gradient-to-b from-zinc-900/50"></section>
         <form
-          onSubmit={handleSubmit}
+          //onSubmit={handleSubmit}
           className="relative mx-auto w-[380px] rounded-lg bg-black/75 p-16"
         >
           <article className="text-gray-300">
@@ -52,8 +52,8 @@ export default function Login() {
                 name="email"
                 id="email"
                 placeholder="Enter email"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
+               // value={email}
+                //onChange={(event) => setEmail(event.target.value)}
                 required
               />
               <input
@@ -62,8 +62,8 @@ export default function Login() {
                 name="password"
                 id="password"
                 placeholder="Enter password"
-                value={password}
-                onChange={(event) => setPassword(event.target.value)}
+                //value={password}
+                //onChange={(event) => setPassword(event.target.value)}
                 required
               />
 
@@ -72,10 +72,11 @@ export default function Login() {
               </Link>
               <div className="flex justify-center items-center">
               
+              <Link to="/combine">
               <button className="my-8 rounded-md bg-subMain p-2 font-semibold text-white outline-none">
                 Log In
               </button>
-              
+              </Link>
               </div>
             </section>
             <p>
