@@ -15,7 +15,7 @@ interface LayoutProps {
   <Header />
   {children}
   <p className="text-3xl text-purple-600">NEW RELEASE</p><br />
-    <Video/><br />
+    <Video/><p className="text-white text-lg">UP movie</p><br />
     <p className="text-3xl text-purple-600">POPULAR MOVIES</p><br />
     <Movies/>
   <Footer />
